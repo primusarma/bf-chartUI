@@ -1,0 +1,27 @@
+{
+  "name": "nightingale",
+  "description": "Chart making tool for journalists",
+  "main": "src/index.js",
+  "authors": [
+    "Luke.Kavanagh@ft.com"
+  ],
+  "license": "MIT",
+  "homepage": "http://editorial.ft.com/nightingale",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "~3.3.3",
+    "d3": "~3.4.8",
+    "backbone": "~1.1.2",
+    "backbone.stickit": "~0.8.0",
+    "o-charts": "https://github.com/ft-interactive/o-charts.git#0.0.6",
+    "jquery": "~2.1.3"
+  },
+  "version": "0.0.0"
+}

@@ -1,0 +1,25 @@
+
+.view-series-list {
+    &:empty {
+        height: 38px;
+        background-color: #eee;
+        border-radius: 2px;
+        box-shadow: inset 0 0 6px #AAA6A6;
+    }
+    &:empty::after {
+        content: "add data series";
+        height: 38px;
+        line-height: 38px;
+        vertical-align: middle;
+        color: #ccc;
+        padding-left: 13px;
+    }
+    &.unused {
+        margin-top: 10px;
+        padding-top: 6px;
+        border-top: 2px dashed $panel-inner-border;
+        .series-name {
+            color: darken($panel-inner-border, 30%);
+        }
+    }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "o-charts",
+  "authors": [
+    "tomgp <tom.g.pearson@gmail.com>",
+    "kavanagh <ltkavanagh@gmail.com>"
+  ],
+  "description": "FT style charts, axes, scales etc",
+  "main": "src/scripts/o-charts.js",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "d3": "~3.4.13"
+  },
+  "homepage": "https://github.com/ft-interactive/o-charts",
+  "version": "0.0.1",
+  "_release": "0.0.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.0.1",
+    "commit": "63a6c076ca07da897227f95613732d77b8539d05"
+  },
+  "_source": "https://github.com/ft-interactive/o-charts.git",
+  "_target": "0.0.1",
+  "_originalSource": "https://github.com/ft-interactive/o-charts.git"
+}

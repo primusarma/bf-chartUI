@@ -1,0 +1,27 @@
+<div>
+    <table class="table table-bordered table-condensed">
+        <tbody>
+        <tr>
+            <th class="property-name">Chart type</th>
+            <td class="property-value">{{graphicType.typeName}}</td>
+        </tr>
+        <tr>
+            <th class="property-name">Variation</th>
+            <td class="property-value">{{variation.variationName}}</td>
+        </tr>
+        <tr>
+            <th class="property-name">Width</th>
+            <td class="property-value">{{svg.width}}px</td>
+        </tr>
+        <tr>
+            <th class="property-name">Height</th>
+            <td class="property-value">{{svg.height}}px</td>
+        </tr>
+        </tbody>
+    </table>
+    <hr>
+    <div data-region="graphic-type-controls"></div>
+    <div class="view-export-controls">
+        <button role="button" type="button" name="save" class="btn btn-lg btn-block btn-primary">Save image</button>
+    </div>
+</div>

@@ -1,0 +1,5 @@
+#!/bin/bash
+dir=${1:-_site}
+mkdir -p $dir && \
+mustache src/index.mustache > $dir/index.html ;# -O "{site:$(<package.json)}";
+html-minifier --collapse-boolean-attributes --collapse-whitespace --remove-comments-from-cdata --remove-empty-attributes $dir/index.html -o $dir/index.html

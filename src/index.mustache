@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<meta name={{ site.name }}:version content={{ site.version }}>
+<title></title>
+<link rel=stylesheet href=styles/nightingale.css>
+<script src=scripts/vendor.js></script>
+<script src=scripts/nightingale.js></script>
+
+<meta name="google-signin-client_id" content="863481143430-5ngavh8atbr2lcsuqhn20llb3bnksfhh.apps.googleusercontent.com">
+</html>
+<body>
+<div id=login-container>
+    <div class="feedback-details">
+        <a target="_blank" href="mailto:help.nightingale@ft.com" title="Report issues or get help">help.nightingale@ft.com</a>
+    </div>
+    <div id=login-overlay class="jumbotron">
+        <h1>Nightingale</h1>
+
+        <p>requires a login with your FT credentials</p>
+
+        <div id="login-alert" class="alert alert-danger" role="alert">Please re-sign in with your ft.com email address
+        </div>
+        <div id="my-signin2"></div>
+        <div id="trouble" class="trouble__container ">
+            <p><a href="#trouble">Trouble signing in?</a></p>
+
+            <p class="trouble__help alert alert-danger">
+                Please sign out of <a href="https://mail.google.com/mail/logout?hl=en-GB" target="_blank">Google
+                Mail</a> and try again.<br>
+                Once you have Signed-in into Nightingale, you can sign back into <a href="https://mail.google.com/"
+                                                                                    target="_blank">Google Mail</a>.<br>
+                <a href="#">Thanks.</a>
+                <a href="#" class="trouble__close">close</a>
+            </p>
+        </div>
+    </div>
+</div>
+<div id=layout>
+    <div id=controls></div>
+    <div id=charts></div>
+    <div id=selection></div>
+</div>
+<script src="https://apis.google.com/js/platform.js?onload=nightingale" async defer></script>
+</body>

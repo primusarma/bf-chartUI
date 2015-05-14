@@ -1,0 +1,73 @@
+<div class="axis-panel panel panel-default">
+    <div class="panel-heading">Description
+        <button type="button" class="pull-right btn btn-xs btn-danger" name="discard">
+            Discard data
+        </button>
+    </div>
+    <div class="panel-body">
+        <form role="form">
+            <div class="form-group">
+                <label>Title</label>
+                <input type="text" name="title" class="form-control input-lg" spellcheck="true" required/>
+
+                <p class="help-block">What question does the chart answer?</p>
+            </div>
+            <div class="form-group">
+                <label>Subtitle</label>
+                {{!<div class="input-group">}}
+                <input type="text" name="subtitle" class="form-control" style="height:33px;" required="required"
+                       spellcheck="true"/>
+                {{!<span class="input-group-btn">
+                    <button class="btn btn-default" tabindex="-1" type="button" name="suggest-subtitle">Suggest</button>
+                  </span>
+                </div>}}
+                <p class="help-block">Always describe the Y axis. A note about the range of data used in the X axis also
+                    helps.</p>
+            </div>
+            <div class="form-group">
+                <label>Footnote</label>
+                <input type="text" name="footnote" class="form-control input-sm" spellcheck="true"/>
+
+                <p class="help-block">Notes about data transformations, missing data or special cases.</p>
+            </div>
+            <div class="form-group">
+                <label>Source</label>
+                <input type="text" name="source" class="form-control input-sm" spellcheck="true"
+                       list="common-sources-list"/>
+                <datalist id="common-sources-list">
+                    <option value="Thomson Reuters Datastream"></option>
+                    <option value="Bloomberg"></option>
+                    <option value="World Bank"></option>
+                    <option value="IMF"></option>
+                    <option value="ONS"></option>
+                    <option value="Eurostat"></option>
+                    <option value="US Census Bureau"></option>
+                    <option value="US Bureau of Labor Statistics"></option>
+                </datalist>
+                <p class="help-block popular-sources">Popular sources:
+                    <button type="button" class="popular-source btn btn-link btn-xs">Thomson Reuters Datastream</button>
+                    ,
+                    <button type="button" class="popular-source btn btn-link btn-xs">Bloomberg</button>
+                    ,
+                    <button type="button" class="popular-source btn btn-link btn-xs">World Bank</button>
+                    ,
+                    <button type="button" class="popular-source btn btn-link btn-xs">IMF</button>
+                    ,
+                    <button type="button" class="popular-source btn btn-link btn-xs">ONS</button>
+                    ,
+                    <button type="button" class="popular-source btn btn-link btn-xs">Eurostat</button>
+                    ,
+                    <button type="button" class="popular-source btn btn-link btn-xs">US Census Bureau</button>
+                    ,
+                    <button type="button" class="popular-source btn btn-link btn-xs">US Bureau of Labor Statistics
+                    </button>
+                    .
+                </p>
+            </div>
+        </form>
+    </div>
+</div>
+<div data-region="xAxis"></div>
+<div data-region="yAxis"></div>
+{{! <div data-region="zAxis"></div> }}
+<br/>

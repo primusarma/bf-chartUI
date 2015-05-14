@@ -1,0 +1,1 @@
+rsync -rtvu --delete _site/ $1@ftweb115-lvpr-uk-ci.osb.ft.com:/opt/customer/apps/editorial/nightingale/

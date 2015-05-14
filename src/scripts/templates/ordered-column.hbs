@@ -1,0 +1,23 @@
+<span class="series-item-drag-content">
+<span class="series-num" draggable="true">{{#unless unused}}{{index}}.{{/unless}}</span>
+<span>
+    {{#if unused}}
+        <span name="label" class="series-name"></span>
+    {{else}}
+        <span title="click to edit the series {{index}} label" name="label" class="series-name" placeholder="none"
+              contenteditable></span>
+    {{/if}}
+</span>
+<span class="series-item-controls">
+    {{#if unused}}
+        <button class="btn btn-default btn-xs" name="add-column" data-property="{{property}}">Add series</button>
+    {{else}}
+        <span class="swatch swatch-line" data-placement="top" data-index="{{index}}" data-help="LINE_SERIES"></span>
+  <!--
+  <span class="swatch swatch-bar" data-placement="top" data-index="{{index}}" data-help="BAR_SERIES">B</span>
+  -->
+  <button name="remove-series" tabindex="-1" type="button" class="close"><span aria-hidden="true">&times;</span><span
+          class="sr-only">Close</span></button>
+    {{/if}}
+</span>
+</span>
