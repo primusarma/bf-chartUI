@@ -1,0 +1,9 @@
+<!DOCTYPE html><html><meta name=nightingale:version content=0.0.3><title></title><link rel=stylesheet href=styles/nightingale.css><script src=scripts/vendor.js></script><script src=scripts/nightingale.js></script></html><body><div id=layout><div id=controls></div><div id=charts></div><div id=selection></div></div><script>try {
+            var ng = window.nightingale();
+        } catch (e) {
+            var d = document.createElement('pre');
+            var s = d.style;
+            s.position = 'fixed', s.zIndex = 2, s.width = '100%';
+            d.innerHTML = e.stack, document.body.appendChild(d);
+            throw e;
+        }</script></body>
